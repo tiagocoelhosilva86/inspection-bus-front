@@ -1,0 +1,123 @@
+@import 'src/app/scss/index';
+
+.body {
+    background-image: url("/assets/imagens/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // aspect-ratio: 16/9;
+    //aspect-ratio: 16/4;
+    aspect-ratio: 16/6;
+    display: grid;
+
+    .card-titulo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .titulo {
+            color: $white;
+            font-size: 30px;
+            font-family: inherit;
+        }
+    }
+
+    .card-texto {
+        opacity: 1.5;
+        display: grid;
+        align-items: center;
+        width: 75vh;
+        margin-left: 14vh;
+
+        .texto {
+            .titulo {
+                font-family: inherit;
+                color: $white;
+            }
+
+            .subtitle {
+                color: $white;
+            }
+        }
+    }
+}
+
+.card-conteudo {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+
+    .box-conteudo {
+        display: flex;
+        flex-direction: column;
+        width: 28vh;
+        align-items: center;
+        background-color: $verdeBase;
+        border-radius: 30px;
+
+        .titulo {
+            color: $white;
+            padding-top: 2vh;
+            margin: 1vh;
+        }
+
+        .subtitle {
+            margin-bottom: 6vh;
+            margin: 2vh;
+            text-align: center;
+            color: $white;
+        }
+    }
+}
+
+.card-marcacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+    .titulo {
+        font-family: inherit;
+        color: $verdeClaro;
+    }
+
+    .subtitle {
+        color: $black;
+        padding-top: 15px;
+        
+    }
+}
+
+.card-carrosel {
+
+}
+
+.card-map {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .titulo {
+        font-family: inherit;
+        color: $verdeClaro;
+        margin-bottom: 25px;
+    }
+
+    
+}
+
+.card-horario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+    .titulo {
+        font-family: inherit;
+        color: $verdeClaro;
+    }
+
+    .subtitle {
+        color: $black;
+        padding-top: 15px;
+    }
+}

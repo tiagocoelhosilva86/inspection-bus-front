@@ -1,0 +1,28 @@
+@import 'src/app/scss/index';
+
+.header {
+
+    background-color: $white;
+    aspect-ratio: 52/2;
+
+    .icon {
+        img {
+            width: 15px;
+        }
+    }
+
+    .menu-titulo {
+
+        .titulo {
+            font-size: 20px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: $verdeBase;
+        }
+    }
+
+
+}

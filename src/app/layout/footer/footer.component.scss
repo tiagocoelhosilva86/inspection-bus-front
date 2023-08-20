@@ -1,0 +1,26 @@
+@import 'src/app/scss/index';
+
+.container-footer {
+    aspect-ratio: 29/3;
+    background-color: $verdeScuro;
+
+    .box-redeSociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+.titulo {
+    color: $white;
+}
+    }
+
+    .box-icons {
+        display: flex;
+        justify-content: space-evenly;
+
+        .texto {
+            color: $white;
+            cursor: pointer;
+        }
+
+    }
+}

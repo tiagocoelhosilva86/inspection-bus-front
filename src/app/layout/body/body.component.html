@@ -1,0 +1,153 @@
+<div class="body">
+  <div class="card-titulo">
+    <h1 class="titulo">
+      Bem-vindo à nossa plataforma de marcação de consultas psicológicas!
+    </h1>
+  </div>
+  <div class="card-texto">
+    <div class="texto">
+      <h1 class="titulo">Cuide do seu bem-estar emocional - Marque sua consulta psicológica online</h1>
+      <p class="subtitle">Às vezes, a jornada para o equilíbrio emocional começa com uma simples ação:
+        marcar uma consulta com um profissional de confiança. Nossa plataforma de marcação de
+        consultas psicológicas está aqui para tornar esse processo fácil, conveniente e acessível.
+        Aqui está o que você pode esperar ao usar nossos serviços:
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card-conteudo">
+  <div class="box-conteudo pl-3">
+    <h4 class="titulo">Marcação Online Simplificada:</h4>
+    <p class="subtitle">
+      Nossa plataforma foi projetada com a sua comodidade em mente.
+      Agende sua consulta em apenas alguns cliques, escolhendo o psicólogo, o horário e a data que melhor se adequam à
+      sua agenda.
+    </p>
+  </div>
+
+  <div class="box-conteudo pl-3">
+    <h4 class="titulo">Privacidade e Conforto:</h4>
+    <p class="subtitle">
+      Entendemos a importância da privacidade quando se trata de saúde mental. Nossas consultas são realizadas de forma
+      segura
+      e confidencial, proporcionando a você um ambiente confortável para discutir seus sentimentos e preocupações.
+    </p>
+  </div>
+
+  <div class="box-conteudo pl-3">
+    <h4 class="titulo">Flexibilidade de Consultas:</h4>
+    <p class="subtitle">
+      Oferecemos opções flexíveis, incluindo consultas presenciais e online, para atender às suas necessidades e
+      preferências individuais.
+    </p>
+  </div>
+
+  <div class="box-conteudo pl-3">
+    <h4 class="titulo">Apoio Contínuo:</h4>
+    <p class="subtitle">
+      Nosso compromisso vai além da consulta única. Nossos psicólogos estão aqui para fornecer apoio contínuo,
+      auxiliando você no seu caminho em direção ao bem-estar emocional.
+    </p>
+  </div>
+</div>
+
+<div class="card-marcacao">
+  <h1 class="titulo">
+    Reserve Sua Consulta Hoje:
+  </h1>
+  <p class="subtitle">
+    Priorize sua saúde mental e dê o primeiro passo em direção a uma vida mais equilibrada e feliz. Marque sua consulta
+    psicológica hoje mesmo e comece sua jornada de autocuidado.
+
+    Estamos aqui para ajudar você a encontrar clareza, alívio e fortalecimento emocional. Marque sua consulta agora e
+    comece a construir um futuro mais saudável e positivo.
+
+    Lembre-se, cuidar da sua mente é um passo corajoso em direção a uma vida mais plena. Estamos ansiosos para
+    acompanhá-lo nessa jornada.
+  </p>
+</div>
+
+<div class="card-carrosel">
+
+  <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" *ngFor="let slide of slides">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner" *ngFor="let slide of slides">
+      <div class="carousel-item active">
+        <img
+          alt="{{slide.title}}"
+          class="d-block w-100"
+          loading="lazy"
+          src="{{slide.src}}"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{slide.title}}</h5>
+          <p>{{slide.subtitle}}</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+  <a class="btn btn-success btn-prev" (click)="btn.prev()"><i class="fa-solid fa-chevrons-left"></i></a>
+        <a class="btn btn-success btn-next" (click)="btn.next()"><i class="fa-regular fa-chevrons-right"></i></a>
+  <owl-carousel-o #btn [options] =" customOptions ">
+
+    <ng-container *ngFor="let slides of slidesStore">
+      <ng-template carouselSlide [id]="slide.id">
+        <img
+        alt="{{slides.title}}"
+        class="d-block w-100"
+        loading="lazy"
+        src="{{slides.src}}"
+      />
+      </ng-template>
+    </ng-container>
+
+  </owl-carousel-o>
+  
+
+
+</div>
+
+<div class="card-map">
+  <h1 class="titulo">
+    Nossa localização
+    <i class="fa-solid fa-location-dot fa-bounce" style="color: #1A463E;"></i>
+  </h1>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7815433189867!2d-34.902708123181405!3d-8.12371098131312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb1453f1815%3A0xec9f3c661d2eb8ac!2sEmpresarial%20Blue%20Tower!5e0!3m2!1spt-BR!2sbr!4v1691672165623!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<div class="card-horario">
+  <h1 class="titulo">
+    Nosso horário de atendimento 
+    <i class="fa-solid fa-clock" style="color: #1A463E;"></i>
+  </h1>
+  <p class="subtitle">
+    Segunda a Sexta 8:00 ás 12:00 e 13:00 ás 17:00
+  </p>
+  <p class="subtitle">
+    Sábado 8:00 ás 12:00 
+  </p>
+  <p class="subtitle">
+    Telefone para contato: 3232-5656
+    <i class="fa-solid fa-phone-volume fa-shake" style="color: #1A463E;"></i>
+  </p>
+</div>
