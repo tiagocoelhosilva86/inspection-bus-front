@@ -1,18 +1,18 @@
 @import 'src/app/scss/index';
 
 .body {
-    background-image: url("/assets/imagens/home.jpg");
+    background-image: url("/assets/imagens/Imagem8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    // aspect-ratio: 16/9;
+    aspect-ratio: 16/9;
     //aspect-ratio: 16/4;
-    aspect-ratio: 16/6;
+    // aspect-ratio: 16/6;
     display: grid;
 
     .card-titulo {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        // align-items: center;
 
         .titulo {
             color: $white;
@@ -49,7 +49,7 @@
     .box-conteudo {
         display: flex;
         flex-direction: column;
-        width: 28vh;
+        width: 40vh;
         align-items: center;
         background-color: $verdeBase;
         border-radius: 30px;
@@ -87,8 +87,49 @@
     }
 }
 
-.card-carrosel {
+.card-text-carrosel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .titulo {
+        font-family: inherit;
+        color: $verdeClaro;
+        margin-bottom: 25px;
+    }
+}
 
+.box-carrosel {
+    
+        width: 90vw;
+        margin: 0 auto;
+        // margin-bottom: 1rem;
+        position: relative;
+        border: none;
+        height: 30vw;
+      
+        .btn-prev,
+        .btn-next {
+          position: absolute;
+          top: 30%;
+          z-index: 2;
+          padding: 5px 14px;
+        }
+      
+        .btn-prev {
+          left: -35px;
+        }
+      
+        .btn-next {
+          right: -35px;
+        }
+      .card-carousel{
+        border: none;
+      }
+      .card-header{
+        border: none;
+      }
+    
+      
 }
 
 .card-map {
